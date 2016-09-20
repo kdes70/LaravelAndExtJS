@@ -20,9 +20,9 @@
 
 
     <script type="text/javascript" src="/js/extjs/ext-all.js"></script>
-    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false">
 <div class="container">
     @yield('content')
 </div>

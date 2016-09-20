@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', 'MainController@index')->name('index');
-Route::get('/comments/{id}', 'MainController@getComments')->name('comments');
 
-
-
-Route::get('/nts', 'Nts\NtsController@index')->name('nts');
+Route::get('/', 'Nts\NtsController@index')->name('index');
 
 Route::group(['prefix' => '/nts/api/v1'], function () {
-    Route::get('users/', 'ApiController@rdrUser');
+    Route::get('read', 'Nts\Api\V1\ApiController@read');
 });

@@ -4,7 +4,14 @@
 
 ### Installation
 
+**Git clone**
+```shell
+    git clone https://github.com/kdes70/LaravelAndExtJS.git
+```
+
 **Composer**
+
+
 
 создаем таблицы
 ```shell
